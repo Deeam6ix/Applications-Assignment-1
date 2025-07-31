@@ -1,13 +1,13 @@
 # Define a base class to store the final mark
-class GradingSysInput:
+class GradingSysInput: #Parent class
     def __init__(self, final_mark):
         # Store the final mark as an instance variable
         self.final_mark = final_mark
 
 
 # Define a class that processes the input and determines the grade
-class GradingSysProcess(GradingSysInput):
-    def __init__(self, final_mark):
+class GradingSysProcess(GradingSysInput): #Child Class 
+    def __init__(self, final_mark): #Inheriting characteristic from the parent class
         # Call the constructor of the parent class
         super().__init__(final_mark)
 
